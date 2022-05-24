@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/home.css">
+    <title>LKDFITNESS | HOME</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home">
+                <img src="./imgs/small-logo.png" alt="LKDFITNESS Logo">
+            </a>
+
+            <ul class="page-itens">
+                <li>
+                    <a onclick="closeMenu()" href="#home">HOME</a>
+                    <a onclick="closeMenu()" href="#about">SOBRE NÓS</a>
+                    <a onclick="closeMenu()" href="#depoimentos">DEPOIMENTOS</a>
+                    <a onclick="closeMenu()" href="#contact">CONTATO</a>
+                </li>
+
+                <div class="menu-icons">
+                    <a href="">
+                        <img src="./imgs/heart-icon.svg" alt="ícone de coração">
+                    </a>
+                    <a href="">
+                        <img src="./imgs/bag-icon.svg" alt="ícone de compras">
+                    </a>
+                </div>
+            </ul>
+        </nav>
+
+        <button aria-expanded="false" aria-label="Abrir menu" onclick="openMenu()" class="open-menu">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        <button aria-expanded="true" aria-label="Fechar menu" onclick="closeMenu()" class="close-menu">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+        </button>
+
+    </header>
+
+    <section id="home">
+
+       <div class="intro-wrapper">
+
+        <div class="bt-div">
+            <h1>Vestindo o que você ama</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula porttitor sapien ut egestas. In malesuada velit vel nisl tempor, vitae tincidunt ligula mattis. Aliquam fermentum semper mattis.</p>
+            <button>NOSSOS PRODUTOS</button>
+        </div>
+
+
+        <img src="./imgs/3.svg" alt="Figura de uma mulher praticando exercícios">
+
+       </div>
+
+    </section>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
