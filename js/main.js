@@ -1,29 +1,19 @@
-function showBackToTopButtonOnScroll() {
-    if (scrollY > 200) {
-        backToTopButton.classList.add('show') //adding show class on html
-    } else {
-        backToTopButton.classList.remove('show') // removing show class on html
-    }
+var navbar = document.querySelector(".navbar")
+var ham = document.querySelector(".ham")
+
+// toggles hamburger menu in and out when clicking on the hamburger
+function toggleHamburger(){
+  navbar.classList.toggle("showNav")
+  ham.classList.toggle("showClose")
 }
 
-window.addEventListener('scroll', onScroll) //correcting scroll error on body
+ham.addEventListener("click", toggleHamburger)
 
-onScroll()
-function onScroll() {
-   
-   showNavOnScroll()
-   showBackToTopButtonOnScroll()
+// toggle when clicking on links
 
-    activeMenuAtCurrentSection(home)
-    activeMenuAtCurrentSection(collection)
-    activeMenuAtCurrentSection(whyUs)
-    activeMenuAtCurrentSection(howTo)
-
-}
-
-ScrollReveal({
-    origin: 'top',
-    distance: '30px',
-    duration: 700,
-}).reveal('#home, #home .intro-wrapper, #home .bt-div, #services, #services header, #services .card, #about, #about header, #about content');
-
+var menuLinks = document.querySelectorAll(".menuLink")
+menuLinks.forEach( 
+  function(menuLink) { 
+    menuLink.addEventListener("click", toggleHamburger) 
+  }
+)
