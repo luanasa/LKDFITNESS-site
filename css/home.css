@@ -117,7 +117,7 @@ nav > a img {
     text-align: left;
     margin-top: -10%;
     width: 34.375rem;
-    margin-left: 20rem;
+    margin-left: 14rem;
     margin-right: -10rem;
     
 }
@@ -683,6 +683,10 @@ nav > a img {
   border-bottom: 2px solid white;
 }
 
+img.teste {
+  margin-left: -4rem;
+}
+
 /* HEADER*/
 
 @media (min-width: 240px) and (max-width: 767px) {
@@ -812,10 +816,8 @@ nav > a img {
     align-items: center;
   }
 
-  nav a > img {
-    display: flex;
-
-    margin-left: -9rem;
+  img.teste {
+    margin-left: -4rem;
   }
 
   .page-itens {
@@ -835,7 +837,6 @@ nav > a img {
     flex-direction: row;
 
     margin-left: 2rem;
-    width: 100%;
   }
 
   .page-itens li a{
